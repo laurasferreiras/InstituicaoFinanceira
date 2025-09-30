@@ -37,5 +37,16 @@ namespace ControleContas
         private decimal _saldo;
         public decimal Saldo { get { return _saldo; } private set { _saldo = value; } }
 
+        public void Depositar(decimal valor)
+        {
+            if (valor < 0)
+            {
+                Console.WriteLine("Valor negativo");
+                return;
+            }
+            _saldo += valor;
+        } 
+
+
     }
 }
