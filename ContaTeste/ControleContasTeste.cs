@@ -8,7 +8,7 @@ namespace ControleContas.Tests
         [TestMethod]
         public void TestarDepositoPositivo()
         {
-            Conta conta = new Conta(1);
+            Conta conta = new Conta("Laura", 12345, 0); 
             conta.Depositar(100);
             Assert.AreEqual(100, conta.Saldo);
         }
@@ -16,7 +16,7 @@ namespace ControleContas.Tests
         [TestMethod]
         public void TestarDepositoNegativo()
         {
-            Conta conta = new Conta(1);
+            Conta conta = new Conta("Laura", 12345, 0); 
             conta.Depositar(-50);
             Assert.AreEqual(0, conta.Saldo);
         }
