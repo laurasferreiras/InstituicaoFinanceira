@@ -32,9 +32,9 @@ namespace ControleContas
         public void MostrarDados()
         {
             Console.WriteLine("Cliente");
-            Console.WriteLine($"nome: {Nome}");
-            Console.WriteLine($"cpf: {CPF}");
-            Console.WriteLine($"anoNascimento: {Idade}");
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Cpf: {CPF}");
+            Console.WriteLine($"Ano Nascimento: {Idade}");
         }
     }
 }
